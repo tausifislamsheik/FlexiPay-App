@@ -7,12 +7,36 @@
     <!-- Tailwind Css & Daisy Ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/2b57bc1e88.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main>
-                <div class="mockup-phone">
+    <main class="flex justify-center">
+        <div class="mockup-phone h-screen bg-slate-100">
         <div class="mockup-phone-camera"></div>
-        <div class="mockup-phone-display text-white grid place-content-center">It's Glowtime.</div>
+        <div class="mockup-phone-display text-white grid place-content-center">
+
+            <!-- Balance & Logout Button -->
+             <div class="flex items-center gap-14">
+                <div class="flex items-center">
+                    <img class="w-15 h-15" src="images/Group.png" alt="">
+                    <div class="stats">
+                     <div class="stat mt-6">
+                        <div class="stat-value text-black text-2xl mb-2">$<span>5,500</span></div>
+                        <div class="stat-desc text-sm font-bold">Available Balance</div>
+                     </div>
+                    </div>
+                </div>
+                <!-- Logout button -->
+                 <div class="mt-5">
+                    <button class="btn font-bold hover:bg-black hover:text-white text-gray-500 border-black">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    Log Out
+                    </button>
+                 </div>
+             </div>
+             <div class="divider"></div>
+        </div>
         </div>      
     </main>
 </body>
