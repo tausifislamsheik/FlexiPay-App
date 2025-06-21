@@ -11,15 +11,22 @@
      <link rel="shortcut icon" href="images/Group.png" type="image/x-icon">
     <!-- Font Awesome -->
      <script src="https://kit.fontawesome.com/2b57bc1e88.js" crossorigin="anonymous"></script>
+     <!-- Google Font -->
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    </style>
+    <!-- Css link -->
+     <script src="style.css"></script>
 </head>
 <body>
     <main class="flex justify-center">
-        <div class="mockup-phone h-screen bg-slate-100">
+        <div class="mockup-phone bg-slate-100">
         <div class="mockup-phone-camera"></div>
-        <div class="mockup-phone-display text-white grid place-content-center">
+        <div class="mockup-phone-display   ">
 
             <!-- Balance & Logout Button -->
-             <div class="flex items-center gap-14">
+             <div class="bg-white rounded-b-2xl p-2 outfit">
+                <div class="flex items-center gap-14">
                 <div class="flex items-center">
                     <img class="w-15 h-15 mt-4 -mr-4" src="images/Group.png" alt="">
                     <div class="stats">
@@ -31,13 +38,58 @@
                 </div>
                 <!-- Logout button -->
                  <div class="mt-5">
-                    <button class="btn font-bold hover:bg-black hover:text-white text-gray-500 border-black">
+                    <button class="btn font-bold bg-white hover:bg-black hover:text-white text-gray-500 border-black">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     Log Out
                     </button>
                  </div>
-             </div>
-             <div class="divider"></div>
+                </div>
+              <div class="divider"></div>
+              <!-- Card Section -->
+               <div class="outfit mb-5">
+                 <h1 class="font-extrabold text-xl mb-2">🔥 Welcome to FlexiPay!</h1>
+                 <h4 class="text-gray-500">Enjoy easy and convenient financial services with us.Cash Out charge is low.</h4>
+               </div>
+               <div class="p-2 grid grid-cols-3 gap-4">
+                 <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
+                    <img src="images/wallet1.png" alt="">
+                    Add Money</button>
+                 <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
+                    <img src="images/send1.png" alt="">
+                    CashOut</button>
+                 <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
+                    <img src="images/money1.png" alt="">
+                    Transfer Money</button>
+                 <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
+                    <img src="images/bonus1.png" alt="">
+                    Get Bonus</button>
+                 <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
+                    <img src="images/purse1.png" alt="">
+                    PayBill</button>
+                 <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
+                    <img src="images/transaction1.png" alt="">
+                    Transactions</button>
+               </div>
+               
+            </div>
+            <!-- Add Money Section -->
+            <h1 class="font-bold text-xl mt-4">Add Money</h1>
+             <div>
+            <div class="hero-content">
+                <div class="card bg-base-100 text-black w-96 shrink-0 p-4 rounded-3xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                    <label class="label font-semibold text-lg">Amount to Add</label>
+                    <input id="addMoney-input-field" type="text" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Your Amount" />
+                    <label class="label font-semibold text-lg">Pin Number</label>
+                    <input id="pin-input-field" type="password" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Pin Number" />
+                    <button id="addMoney-btn" class="btn bg-blue-700 text-white mt-4 rounded-4xl">Add Money</button>
+                    </fieldset>
+                </div>
+                </div>
+            </div>
+            </div>
+              
         </div>
         </div>      
     </main>
