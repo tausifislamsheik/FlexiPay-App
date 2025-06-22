@@ -73,13 +73,14 @@
                
             </div>
             <!-- Add Money Section -->
-            <h1 class="font-bold text-xl mt-4">Add Money</h1>
+            <div id="addMoney-section" class="hidden">
+               <h1 class="font-bold text-xl mt-4">Add Money</h1>
              <div>
             <div class="hero-content">
                 <div class="card bg-base-100 text-black w-96 shrink-0 p-4 rounded-3xl">
                 <div class="card-body">
                     <fieldset class="fieldset">
-                    <label class="label font-semibold text-lg">Amount to Add</label>
+                    <label class="label font-semibold text-lg">Amount</label>
                     <input id="addMoney-input-field" type="text" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Your Amount" />
                     <label class="label font-semibold text-lg">Pin Number</label>
                     <input id="pin-input-field" type="password" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Pin Number" />
@@ -89,11 +90,32 @@
                 </div>
             </div>
             </div>
+            </div>
+            <!-- CashOut Money -->
+             <div class="">
+                <h1 class="font-bold text-xl mt-4">Cash Out</h1>
+             <div>
+            <div class="hero-content">
+                <div class="card bg-base-100 text-black w-96 shrink-0 p-4 rounded-3xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                    <label class="label font-semibold text-lg">Amount</label>
+                    <input id="Cash-out-amount" type="text" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Your Amount" />
+                    <label class="label font-semibold text-lg">Pin Number</label>
+                    <input id="cashOut-pin" type="password" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Pin Number" />
+                    <button id="CashOut-btn" class="btn bg-blue-700 text-white mt-4 rounded-4xl">CashOut</button>
+                    </fieldset>
+                </div>
+                </div>
+            </div>
+            </div>
+             </div>
               
         </div>
         </div>      
     </main>
     <script src="JS/utilities.js"></script>
     <script src="JS/addMoney.js"></script>
+    <script src="JS/cashOut.js"></script>
 </body>
 </html>
