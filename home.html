@@ -51,10 +51,10 @@
                  <h4 class="text-gray-500">Enjoy easy and convenient financial services with us.Cash Out charge is low.</h4>
                </div>
                <div class="p-2 grid grid-cols-3 gap-4">
-                 <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
+                 <button id="show-addMoney" class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
                     <img src="images/wallet1.png" alt="">
                     Add Money</button>
-                 <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
+                 <button id="show-cashOut" class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
                     <img src="images/send1.png" alt="">
                     CashOut</button>
                  <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
@@ -66,14 +66,14 @@
                  <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
                     <img src="images/purse1.png" alt="">
                     PayBill</button>
-                 <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
+                 <button id="show-transaction" class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
                     <img src="images/transaction1.png" alt="">
                     Transactions</button>
                </div>
                
             </div>
             <!-- Add Money Section -->
-            <div id="addMoney-section" class="hidden">
+            <div id="addMoney-section">
                <h1 class="font-bold text-xl mt-4">Add Money</h1>
              <div>
             <div class="hero-content">
@@ -92,7 +92,7 @@
             </div>
             </div>
             <!-- CashOut Money -->
-             <div class="">
+             <div id="cashOut-section">
                 <h1 class="font-bold text-xl mt-4">Cash Out</h1>
              <div>
             <div class="hero-content">
@@ -110,6 +110,14 @@
             </div>
             </div>
              </div>
+             <!-- Transaction History -->
+              <div id="transaction-section">
+                 <div class="flex justify-between items-center">
+                  <h1 class="font-bold text-xl mt-4">Transaction History</h1>
+                  <div class="text-gray-500 mt-5 cursor-pointer hover:text-blue-600 hover:underline">View All</div>
+                 </div>
+                 <div id="transaction-container"></div>
+              </div>
               
         </div>
         </div>      
@@ -117,5 +125,6 @@
     <script src="JS/utilities.js"></script>
     <script src="JS/addMoney.js"></script>
     <script src="JS/cashOut.js"></script>
+    <script src="JS/features.js"></script>
 </body>
 </html>
