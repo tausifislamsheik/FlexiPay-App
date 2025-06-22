@@ -60,7 +60,7 @@
                  <button id="show-transferMoney" class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
                     <img src="images/money1.png" alt="">
                     Transfer Money</button>
-                 <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
+                 <button id="show-getBonus" class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
                     <img src="images/bonus1.png" alt="">
                     Get Bonus</button>
                  <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
@@ -80,10 +80,10 @@
                 <div class="card bg-base-100 text-black w-96 shrink-0 p-4 rounded-3xl">
                 <div class="card-body">
                     <fieldset class="fieldset">
-                    <label class="label font-semibold text-lg">Amount</label>
-                    <input id="addMoney-input-field" type="text" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Your Amount" />
-                    <label class="label font-semibold text-lg">Pin Number</label>
-                    <input id="pin-input-field" type="password" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Pin Number" />
+                    <label class="label font-semibold text-lg text-black">Amount</label>
+                    <input id="addMoney-input-field" type="text" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Your Amount"/>
+                    <label class="label font-semibold text-lg text-black">Pin Number</label>
+                    <input id="pin-input-field" type="password" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Pin Number"/>
                     <button id="addMoney-btn" class="btn bg-blue-700 text-white mt-4 rounded-4xl">Add Money</button>
                     </fieldset>
                 </div>
@@ -99,9 +99,9 @@
                 <div class="card bg-base-100 text-black w-96 shrink-0 p-4 rounded-3xl">
                 <div class="card-body">
                     <fieldset class="fieldset">
-                    <label class="label font-semibold text-lg">Amount</label>
+                    <label class="label font-semibold text-lg text-black">Amount</label>
                     <input id="Cash-out-amount" type="text" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Your Amount" />
-                    <label class="label font-semibold text-lg">Pin Number</label>
+                    <label class="label font-semibold text-lg text-black">Pin Number</label>
                     <input id="cashOut-pin" type="password" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Pin Number" />
                     <button id="CashOut-btn" class="btn bg-blue-700 text-white mt-4 rounded-4xl">CashOut</button>
                     </fieldset>
@@ -118,11 +118,11 @@
                 <div class="card bg-base-100 text-black w-96 shrink-0 p-4 rounded-3xl">
                 <div class="card-body -mt-8">
                     <fieldset class="fieldset">
-                    <label class="label font-semibold text-lg">User Account Number</label>
+                    <label class="label font-semibold text-lg text-black">User Account Number</label>
                     <input id="user-account-number-input-field" type="password" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter 11 Digit Number" />
-                    <label class="label font-semibold text-lg">Amount</label>
+                    <label class="label font-semibold text-lg text-black">Amount</label>
                     <input id="transferMoney-input-field" type="text" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Your Amount" />
-                    <label class="label font-semibold text-lg">Pin Number</label>
+                    <label class="label font-semibold text-lg text-black">Pin Number</label>
                     <input id="transfer-money-pin-number" type="password" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Pin Number" />
                     <button id="sendNow-btn" class="btn bg-blue-700 text-white mt-4 rounded-4xl">Send Now</button>
                     </fieldset>
@@ -131,6 +131,23 @@
             </div>
             </div>
             </div>
+            <!-- Get Bonus -->
+             <div id="getBonus-section">
+                <h1 class="font-bold text-xl mt-4">Get Bonus</h1>
+             <div>
+            <div class="hero-content">
+                <div class="card bg-base-100 text-black w-96 shrink-0 p-4 rounded-3xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                    <label class="label font-semibold text-lg text-black">Enter Bonus Coupon</label>
+                    <input id="coupon-input" type="text" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Your Coupon" />
+                    <button id="getBonus-btn" class="btn bg-blue-700 text-white mt-4 rounded-4xl">Get Bonus</button>
+                    </fieldset>
+                </div>
+                </div>
+            </div>
+            </div>
+             </div>
              <!-- Transaction History -->
               <div id="transaction-section">
                  <div class="flex justify-between items-center">
@@ -148,6 +165,7 @@
     <script src="JS/addMoney.js"></script>
     <script src="JS/cashOut.js"></script>
     <script src="JS/transferMoney.js"></script>
+    <script src="JS/getBonus.js"></script>
     <script src="JS/features.js"></script>
 </body>
 </html>
