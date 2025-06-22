@@ -57,7 +57,7 @@
                  <button id="show-cashOut" class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
                     <img src="images/send1.png" alt="">
                     CashOut</button>
-                 <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
+                 <button id="show-transferMoney" class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
                     <img src="images/money1.png" alt="">
                     Transfer Money</button>
                  <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
@@ -110,6 +110,27 @@
             </div>
             </div>
              </div>
+             <!-- Transfer Money -->
+              <div id="transferMoney-section">
+               <h1 class="font-bold text-xl my-2">Transfer Money</h1>
+             <div>
+            <div class="">
+                <div class="card bg-base-100 text-black w-96 shrink-0 p-4 rounded-3xl">
+                <div class="card-body -mt-8">
+                    <fieldset class="fieldset">
+                    <label class="label font-semibold text-lg">User Account Number</label>
+                    <input id="user-account-number-input-field" type="password" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter 11 Digit Number" />
+                    <label class="label font-semibold text-lg">Amount</label>
+                    <input id="transferMoney-input-field" type="text" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Your Amount" />
+                    <label class="label font-semibold text-lg">Pin Number</label>
+                    <input id="transfer-money-pin-number" type="password" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Pin Number" />
+                    <button id="sendNow-btn" class="btn bg-blue-700 text-white mt-4 rounded-4xl">Send Now</button>
+                    </fieldset>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
              <!-- Transaction History -->
               <div id="transaction-section">
                  <div class="flex justify-between items-center">
@@ -118,6 +139,7 @@
                  </div>
                  <div id="transaction-container"></div>
               </div>
+
               
         </div>
         </div>      
@@ -125,6 +147,7 @@
     <script src="JS/utilities.js"></script>
     <script src="JS/addMoney.js"></script>
     <script src="JS/cashOut.js"></script>
+    <script src="JS/transferMoney.js"></script>
     <script src="JS/features.js"></script>
 </body>
 </html>
