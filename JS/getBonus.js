@@ -1,5 +1,5 @@
 document.getElementById('getBonus-btn').addEventListener('click', function(){
-    const couponInput = document.getElementById('coupon-input');
+    const couponInput = document.getElementById('coupon-input').value;
     
     if(couponInput === 'Get100'){
         const balance = getTextFieldValueById('account-balance');
