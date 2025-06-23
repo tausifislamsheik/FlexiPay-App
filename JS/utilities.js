@@ -19,4 +19,7 @@ function showClickSection(id){
     document.getElementById('transaction-section').classList.add('hidden');
 
     document.getElementById(id).classList.remove('hidden');
-}
+};
+
+
+

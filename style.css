@@ -1,3 +1,33 @@
-.outfit{
+/* style.css */
+.outfit {
     font-family: "Outfit", sans-serif;
 }
+
+/* Common class for the clickable action buttons */
+.active-button {
+    /* DaisyUI 'btn' class and Tailwind utilities (bg-white, text-gray-500) will handle the default state.
+       We just ensure smooth transitions for the properties we're changing. */
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, font-weight 0.2s ease;
+    /* If DaisyUI's default btn border isn't desired for non-active, you can set:
+       border: 1px solid transparent; /* or a light gray like #E5E7EB */
+    /* However, DaisyUI btn usually has a subtle border or changes on hover/focus.
+       Let's assume the default is fine and we only emphasize the border on active state.
+    */
+}
+
+/* --- ACTIVE STATE --- */
+/* This style applies when a button has both 'active-button' and 'active' classes */
+.active-button.active {
+    background-color: #E7F3FF !important; /* Light blue background, !important to override Tailwind bg-white */
+    border: 1px solid #4A90E2 !important; /* Blue border, !important to ensure it's applied */
+    color: #4A90E2 !important;            /* Blue text, !important to override Tailwind text-gray-500 */
+    font-weight: bold !important;         /* Bold text */
+}
+
+/*
+  When the '.active' class is removed, the button will revert to:
+  - background-color: from 'bg-white' (Tailwind)
+  - color: from 'text-gray-500' (Tailwind)
+  - border: from DaisyUI 'btn' default (usually a subtle border or transparent)
+  - font-weight: from DaisyUI 'btn' default (usually semibold or normal)
+*/
