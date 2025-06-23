@@ -63,7 +63,7 @@
                  <button id="show-getBonus" class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
                     <img src="images/bonus1.png" alt="">
                     Get Bonus</button>
-                 <button class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
+                 <button id="show-payBill" class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
                     <img src="images/purse1.png" alt="">
                     PayBill</button>
                  <button id="show-transaction" class="btn btn-soft bg-white text-gray-500 flex-col p-10  rounded-xl">
@@ -114,7 +114,7 @@
               <div id="transferMoney-section">
                <h1 class="font-bold text-xl my-2">Transfer Money</h1>
              <div>
-            <div class="">
+            <div>
                 <div class="card bg-base-100 text-black w-96 shrink-0 p-4 rounded-3xl">
                 <div class="card-body -mt-8">
                     <fieldset class="fieldset">
@@ -130,7 +130,7 @@
                 </div>
             </div>
             </div>
-            </div>
+              </div>
             <!-- Get Bonus -->
              <div id="getBonus-section">
                 <h1 class="font-bold text-xl mt-4">Get Bonus</h1>
@@ -148,6 +148,27 @@
             </div>
             </div>
              </div>
+             <!-- PayBill -->
+              <div id="payBill-section">
+               <h1 class="font-bold text-xl my-2">Pay Bill</h1>
+             <div>
+            <div>
+                <div class="card bg-base-100 text-black w-96 shrink-0 p-4 rounded-3xl">
+                <div class="card-body -mt-8">
+                    <fieldset class="fieldset">
+                    <label class="label font-semibold text-lg text-black">Biller Account Number</label>
+                    <input id="biller-account-number-input-field" type="password" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Biller Number" />
+                    <label class="label font-semibold text-lg text-black">Amount</label>
+                    <input id="payBill-amount-input-field" type="text" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Your Amount" />
+                    <label class="label font-semibold text-lg text-black">Pin Number</label>
+                    <input id="payBill-pin-number" type="password" class="input rounded-4xl bg-base-300 border-none text-gray-500" placeholder="Enter Pin Number" />
+                    <button id="payNow-btn" class="btn bg-blue-700 text-white mt-4 rounded-4xl">Pay Now</button>
+                    </fieldset>
+                </div>
+                </div>
+            </div>
+            </div>
+              </div>
              <!-- Transaction History -->
               <div id="transaction-section">
                  <div class="flex justify-between items-center">
@@ -166,6 +187,7 @@
     <script src="JS/cashOut.js"></script>
     <script src="JS/transferMoney.js"></script>
     <script src="JS/getBonus.js"></script>
+    <script src="JS/payBill.js"></script>
     <script src="JS/features.js"></script>
 </body>
 </html>

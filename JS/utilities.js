@@ -15,6 +15,7 @@ function showClickSection(id){
     document.getElementById('cashOut-section').classList.add('hidden');
     document.getElementById('transferMoney-section').classList.add('hidden');
     document.getElementById('getBonus-section').classList.add('hidden');
+    document.getElementById('payBill-section').classList.add('hidden');
     document.getElementById('transaction-section').classList.add('hidden');
 
     document.getElementById(id).classList.remove('hidden');

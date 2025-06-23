@@ -23,7 +23,7 @@ document.getElementById('CashOut-btn').addEventListener('click', function(){
         div.className = 'flex items-center justify-between bg-white p-4 rounded-2xl mt-3';
         div.innerHTML = `  
              
-                <img class="w-12 h-12 bg-slate-100 rounded-full p-3 " src="images/wallet1.png" alt="">
+                <img class="w-12 h-12 bg-slate-100 rounded-full p-3 " src="images/send1.png" alt="">
                 <div class="mr-36">
                    <p class="font-bold">Bank Withdraw</p>
                    <p><span class="font-bold">$ </span>${cashOutAmount}</p>

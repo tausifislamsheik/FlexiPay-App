@@ -10,6 +10,9 @@ document.getElementById('show-transferMoney').addEventListener('click', function
 document.getElementById('show-getBonus').addEventListener('click', function(){
     showClickSection('getBonus-section');
 });
+document.getElementById('show-payBill').addEventListener('click', function(){
+    showClickSection('payBill-section');
+});
 document.getElementById('show-transaction').addEventListener('click', function(){
     showClickSection('transaction-section');
 });
